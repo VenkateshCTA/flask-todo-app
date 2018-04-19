@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 client = MongoClient("mongodb://sampleuser:pass123@ds119020.mlab.com:19020/fladocks")
 # client = MongoClient("mongodb://127.0.0.1:27017/todoapp")
-db = client['todoapp']
+db = client['fladocks']
 
 
 @app.route('/')
