@@ -2,4 +2,5 @@ flask
 pymongo
 gunicorn==19.6.0
 nose
+XlsxWriter==1.0.2
 simplejson==3.10.0
