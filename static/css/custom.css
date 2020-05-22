@@ -1,0 +1,1530 @@
+/* BEGIN STYLESHEET HERE */
+
+/* FS Elliot Fonts */
+@font-face {
+  font-family: 'SFUIText-Regular';
+  src: url('https://static.janrain.com/globetelecom/fonts/SFUIText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fs_elliot_pro-regular';
+  src: url('https://static.janrain.com/globetelecom/fonts/fs_elliot_pro-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fs_elliot_pro-bold';
+  src: url('https://static.janrain.com/globetelecom/fonts/fs_elliot_pro-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fs_elliot_pro-heavy';
+  src: url('https://static.janrain.com/globetelecom/fonts/fs_elliot_pro-heavy.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText-Light';
+  src: url('https://static.janrain.com/globetelecom/fonts/SFUIText-Light.ttf') format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFUIText-Regular';
+  src: url('https://static.janrain.com/globetelecom/fonts/SFUIText-Regular.ttf') format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Light';
+  src: url('https://static.janrain.com/globetelecom/fonts/sf-ui-display-cufonfonts/sf-ui-display-light.otf') format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Medium';
+  src: url('https://static.janrain.com/globetelecom/fonts/sf-ui-display-cufonfonts/sf-ui-display-medium.otf') format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Semibold';
+  src: url('https://static.janrain.com/globetelecom/fonts/sf-ui-display-cufonfonts/sf-ui-display-semibold.otf') format("opentype");
+  font-style: normal;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    color: #244958;
+    font-family: 'fs_elliot_pro-regular', Arial, Helvetica, sans-serif;
+    background: url(' https://static.janrain.com/globetelecom/bg-img2.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, form, span {
+  font-family: 'fs_elliot_pro-regular', Helvetica, Arial, sans-serif;
+}
+
+.screen {
+    min-width: 400px!important;
+    min-height: 420px;
+}
+
+/* Globe default button */
+button{
+    border: 1px solid transparent;
+    white-space: nowrap;
+    background:#009CDE;
+    display:block;
+    width: 100%;
+    color:#FFF!important;
+    font-size: 12px;
+    font-weight: bold;
+    padding:10px 12px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+    cursor: pointer;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    font-family: 'fs_elliot_pro-regular', Arial, Helvetica, Arial, sans-serif;
+}
+hr {
+  background:#B9B9B9;
+  color:#B9B9B9;
+  height: 1px;
+  border: none;
+}
+
+a, a:active, a:hover{
+  color:#019CDE;
+  text-decoration:none;
+}
+
+button:hover,
+button:focus {
+  background:#009CDE;
+  color:#FFF;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #a7b4bd;
+  font-size:13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a7b4bd;
+  font-size:13px;
+}
+
+::placeholder {
+  color: #a7b4bd;
+  font-size:13px;
+
+}
+
+.success-check::before {
+    top: 15px;
+    left: 32px;
+    height: 38px;
+    width: 15px;
+    border-width: 0px 5px 5px 0px;
+}
+
+.success-check {
+  background-color: #9ACD32;
+  border-color: #9ACD32;
+}
+
+input[type=text],
+input[type=text]:focus,
+input[type=text]:active,
+input[type=email],
+input[type=email]:focus,
+input[type=email]:active,
+input[type=password],
+input[type=password]:focus,
+input[type=password]:active
+{
+  width: 288px;
+  height: 34px;
+  padding: 0 12px 2px;
+  line-height: 1.42857143;
+  color: #000; /* 7F949D + 0.4 opacity */
+  background-color: #fff;
+  font-size: 14px;
+  border:none;
+  border-bottom: 1px solid #111;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: none;
+  background-color: transparent!important;
+  font-family: 'fs_elliot_pro-regular', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  /* cursor: none; */
+}
+#capture_traditionalAuthenticateMerge_signInEmailAddress {
+  cursor:none;
+}
+
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border:none;
+  -webkit-text-fill-color: none!important;
+  -webkit-box-shadow: none!important;
+  background-color: none!important;
+}
+
+.traditional-signin input[type=text],
+.traditional-signin input[type=text]:focus,
+.traditional-signin input[type=text]:active {
+    color: #7F949D;
+}
+
+.capture_error input[type=text],
+.capture_error input[type=text]:focus,
+.capture_error input[type=text]:active,
+.capture_error input[type=email],
+.capture_error input[type=email]:focus,
+.capture_error input[type=email]:active,
+.capture_error input[type=password],
+.capture_error input[type=password]:focus,
+.capture_error input[type=password]:active {
+  border-color:red
+}
+
+/* overrides */
+#main-container {
+  /* comment the following 2 lines to center aligned the Main panel */
+  /*display:inline-block;
+  margin-left:120px*/
+}
+#header-container img {
+  display:block;
+  height:50px;
+}
+#header-container  {
+  height:auto;
+  padding: 50px 0 0 0;
+  border:none;
+}
+
+#floating-container {
+   /*box-shadow: none*/
+}
+
+h1.screen-heading {
+  font-family: 'fs_elliot_pro-regular', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  margin:0;
+}
+
+.auth-screen .screen-heading {
+  font-family: 'fs_elliot_pro-regular', Helvetica, Arial, sans-serif;
+  color:#244958;
+  text-align: center;
+}
+
+.social-signin {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#traditionalRegistration .social-login-buttons {
+  margin-top: 15px;
+}
+
+.social-signin p,
+#resetPasswordRequest p {
+  font-weight: normal;
+  color: #5B686D;
+  text-align: center;
+  font-family:  'fs_elliot_pro-regular', Arial, sans-serif;
+  font-size:13px;
+  padding-bottom: 10px;
+}
+
+#signIn .screen-description {
+  font-family:  'fs_elliot_pro-regular', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 9px;
+  line-height:16px;
+  background-color:#fdfce4;
+  padding: 5px 8px;
+  color:#000;
+  position: absolute;
+  top: 140px;
+  width: 280px;
+  text-align:center;
+  /*TEMP HIDE*/
+  display:none;
+}
+
+/**important notice error**/
+/* #capture_signIn_signInForm */
+.capture_form_error .note-reminder
+{
+  /* background-color:#fdfce4; */
+  padding: 5px;
+  text-align:left;
+  font-weight:normal;
+  font-size:12.2px;
+  line-height:20px;
+  color: #fa5151;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+.capture_form_error .note-reminder a,
+.capture_form_error .note-reminder a:hover,
+
+.capture_form_error .note-reminder a:active {
+  font-size:12px;
+}
+
+.capture_form_error .note-reminder strong {
+
+  font-family:  'fs_elliot_pro-bold', Arial, sans-serif;
+}
+
+
+.capture_form_error .login-error {
+  color:#fa5151;
+  font-size:13px;
+  margin-top:25px
+}
+
+
+#capture_signIn_formerror_1564827859504 .note-body {
+  font-family:'fs_elliot_pro-regular', Arial,sans-serif;
+  font-weight: normal;
+  font-size: 9px;
+  line-height:16px;
+  padding: 5px 3px;
+}
+
+#capture_signIn_formerror_1564827859504 .note-header {
+  font-weight:bold;
+  font-size: 9px;
+}
+#capture_signIn_signInForm_errorMessages a,
+#capture_signIn_signInForm_errorMessages a:hover{
+  font-weight: normal;
+  font-size: 9px;
+  text-decoration:underline
+}
+
+#capture_signIn_formerror_1564827859504 .note-error {
+  font-weight:bold;
+  font-size:13px;
+  display:block;
+  padding-top:20px;
+  color:rgb(255, 0, 12);
+  text-align:center!important;
+}
+
+
+#signIn .screen-description .note-header {
+   font-weight:700;
+   font-size:12px;
+   display:block;
+   line-height:22px;
+}
+
+.screen-description a,
+.screen-description a:hover{
+  font-weight: normal;
+  font-size: 11px;
+  text-decoration:underline
+}
+
+.social-login-buttons {
+    margin-bottom: 50px;
+    height:35px;
+}
+.social-login-buttons .content-wrapper {
+  display:none!important
+}
+
+.social-login-buttons .provider-name {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0;
+    font-family: 'fs_elliot_pro-bold', Helvetica, Arial, sans-serif;
+}
+
+.social-login-buttons .facebook .provider-name,
+.social-login-buttons .yahoo .provider-name,
+.social-login-buttons .yahoo-oauth2 .provider-name
+ {
+      margin-left: -4px;
+}
+
+.auth-screen hr {
+  /* clear:both; */
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+}
+
+.traditional-signin {
+  margin-top: 40px;
+}
+
+.social-login-buttons button,
+.traditional-signin button {
+  padding:10px 12px;
+  margin-bottom:12px;
+  font-size: 12px;
+}
+
+.social-login-buttons button {
+   display:inline-block;
+   width:94px;
+   float:left;
+   margin-right:8px;
+   padding:0;
+   height:35px;
+   background-size:100% auto;
+   border:none;
+   background-color:transparent;
+   background-repeat: no-repeat;
+   box-shadow:none!important
+}
+
+/* social icons */
+.social-login-buttons .social-provider-icon {
+  height: 35px;
+  width: 23px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  position:relative;
+  border-radius: 0;
+  border:none;
+}
+
+.social-login-buttons button.googleplus {
+   background-image: url(https://static.janrain.com/globetelecom/dark-google2x.png);
+}
+.social-login-buttons button.facebook {
+   /*background-repeat:no-repeat;*/
+   background-image: url(https://static.janrain.com/globetelecom/fb-2x.jpg);
+   /*box-shadow:none!important*/
+}
+.social-login-buttons button.yahoo,
+.social-login-buttons button.yahoo-oauth2
+ {
+    margin-right:0!important;
+    background-image: url(https://static.janrain.com/globetelecom/yahoo-2x.png);
+}
+
+.social-provider-icon.googleplus, .janrain-provider-icon-googleplus {
+    background-image: url(https://static.janrain.com/globetelecom/icon-google.png) !important;
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size:20px;
+    background-position-y:8px;
+    position:relative;
+    right:6px;
+    /*border-right: 1px solid #d2dbde;*/
+}
+.social-login-buttons button.googleplus .provider-name {
+  color:#111;
+  display:inline-block;
+}
+
+
+.social-provider-icon.facebook, .janrain-provider-icon-facebook {
+    background-image: url(https://static.janrain.com/globetelecom/iconssystemfaceboo.png) !important;
+    background-color:rgba(65, 93, 174, 1);
+    background-repeat: no-repeat;
+    position:relative;
+    background-position-x:-6px;
+    right:3px;
+    /*border-right: 1px solid #304e8c;*/
+}
+
+
+.social-provider-icon.yahoo,
+.social-provider-icon.yahoo-oauth2,
+.janrain-provider-icon-yahoo,
+.janrain-provider-icon-yahoo-oauth2
+ {
+    background-image: url(https://static.janrain.com/globetelecom/Yahoo-Icon.png) !important;
+    background-color:#83358b;
+    background-repeat: no-repeat;
+    background-position-x:-7px;
+    right:10px;
+    /*border-right: 1px solid #66246d;*/
+}
+
+.traditional-signin form label,
+.traditional-signin p:nth-child(2),
+.traditional-signin p:nth-child(4),
+#resetPasswordRequest .auth-screen p:nth-child(3) {
+   padding-left: 10px!important;
+   font-size:11px!important;
+}
+
+/* remove other buttons */
+.social-login-buttons button:nth-child(4),
+.social-login-buttons button:nth-child(5),
+.social-login-buttons button:nth-child(6) {
+    display:none;
+}
+
+.traditional-signin h2 {
+  font-family: 'SFUIText-Regular', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color:#244958;
+}
+
+.alternate-credentials {
+  font-family: 'SFUIText-Light', Helvetica, Arial, sans-serif;
+  color:#244958;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom:15px;
+  /*margin-top: 120px;*/
+   margin-top:25px;
+  display:block;
+
+}
+
+.help-text,
+.traditional-signin p,
+.traditional-signin form label,
+#traditionalRegistration form label {
+    color: #4A4A4A;
+    font-size: 11px;
+}
+
+#signIn .form-action-buttons,
+#signIn .form-action-buttons button,
+#signIn .form-action-buttons .capture_processing {
+   margin: 0;
+}
+
+#signIn input {
+   width:300px;
+}
+
+#signIn .form-action-buttons button,
+#signIn .form-action-buttons .capture_processing {
+  width:96%;
+  margin-top:15px;
+}
+
+a.forgot-password-link,
+a.forgot-password-link:hover {
+    display:block;
+    position: static!important;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.capture_error .capture_tip_error {
+  font-size:12px;
+  color:red;
+  padding-left: 10px;
+  width:300px;
+  color: #ff000c;
+  padding-bottom: 10px;
+}
+
+#capture_resetPasswordCodeExchange_resetPasswordRequestForm .capture_error .capture_tip_error,
+#capture_resetPasswordRequest_resetPasswordRequestForm .capture_error .capture_tip_error {
+   padding-left:0;
+}
+
+.footer-container {
+    border:none;
+    margin:0;
+    padding-top:10px;
+}
+
+.help-text,
+.footer-container span,
+.footer-container a,
+.footer-container a:active,
+.footer-container a:hover,
+.footer-container a:focus,
+a.forgot-password-link,
+a.forgot-password-link:active,
+a.forgot-password-link:hover,
+a.forgot-password-link:focus {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#signIn .help-text {
+  top:10px;
+  position:relative;
+}
+
+.footer-container a.aic-control {
+  display:inline-block;
+  margin-left:5px;
+
+}
+.footer-container span,
+.footer-container a,
+.footer-container a:hover,
+.footer-container a:active {
+   /* font-size: 12px; */
+}
+
+.help-text a,
+.help-text a:active,
+.help-text a:focus,
+.help-text a:hover {
+  font-size:13px;
+}
+
+.cancel-link {
+  margin-top:25px
+}
+
+a.cancel-link{
+  text-decoration:none
+}
+
+.help-text {
+    display:none;
+}
+
+
+#resetPasswordRequest h2 {
+  color:#244958;
+
+  font-size: 13px
+}
+
+#resetPasswordRequest .form-action-buttons {
+   margin-top: 25px;
+}
+
+#resetPasswordRequest .capture_processing,
+#resetPasswordRequest .form-action-buttons button {
+  width: 290px;
+  /* position: relative; */
+  /* bottom: 80px; */
+}
+
+#socialRegistration p {
+  color:#7F949D;
+  font-size: 14px;
+  width: 290px;
+  text-align: center;
+}
+
+#resetPassword .screen-heading {
+  margin-bottom: 20px;
+}
+#resetPassword span.reset-note {
+  display:block;
+  text-align:center;
+  margin:0;
+  padding-bottom:20px;
+  font-size:13px;
+  color:#5B686D;
+}
+
+#resetPassword .form-action-buttons button {
+ /* letter-spacing: 2px; */
+  width: 290px;
+  margin-top:15px
+}
+
+.help-link {
+  display:none;
+}
+
+#resetPassword .footer-container span.help-link {
+  display:none;
+}
+
+
+#resetPasswordRequest .footer-container {
+   margin-top: 25px;
+}
+#resetPasswordRequest .registration-acceptance {
+  width:330px;
+}
+
+#capture_resetPassword_form_item_newPassword label,
+#capture_resetPassword_form_item_newPasswordConfirm label {
+  margin-left:12px;
+}
+
+#capture_resetPasswordRequest_form_item_signInEmailAddress label {
+  margin-left:12px;
+}
+
+#capture_socialRegistration_form_item_emailAddress label {
+  margin-left:12px;
+}
+
+#resetPasswordCodeExchange label{
+  margin-left:13px;
+}
+
+#authRule_verifyEmail .auth-screen strong {
+ color:#02B24C;
+}
+
+#manageProfile_privacy .form-action-buttons button,
+#authRule_verifyEmail .form-action-buttons button,
+#authRule_consents .form-action-buttons button,
+#authRule_acceptLegal .form-action-buttons button,
+#traditionalAuthenticateMerge .form-action-buttons button,
+#traditionalRegistration .form-action-buttons button,
+#socialRegistration .form-action-buttons button,
+#verifyEmail .form-action-buttons button,
+#resendVerificationSuccess .form-action-buttons button,
+#capture_resetPasswordCodeExchange_resetPasswordRequestForm
+.form-action-buttons button {
+  width: 290px;
+  margin-top:15px;
+  font-size:12px
+}
+
+#authRule_acceptLegal h1.screen-heading {
+  position:relative;
+  width:340px;
+  right:15px;
+  padding-bottom:20px;
+  padding-top:10px;
+}
+
+#authRule_acceptLegal p.screen-description,
+#authRule_acceptLegal .capture_linkTermsOfService,
+#authRule_acceptLegal .capture_linkPrivacyPolicy {
+  text-align:center;
+  padding-bottom:20px;
+  font-size:13.5px;
+}
+
+#authRule_verifyEmail .form-action-buttons button {
+   background-color:transparent;
+   box-shadow:none;
+   border:1px solid #009CDE;
+   color:#009CDE!important;
+   font-weight:bold
+}
+#authRule_verifyEmail .auth-screen .screen-description {
+  font-size:13px;
+  color:#3e3d3d;
+}
+
+#resendVerificationSuccess .screen-description {
+  text-align:center;
+  padding-top:20px;
+}
+
+/* remove Field: Display Name, Phone number */
+#socialRegistration .auth-screen > p:nth-child(2),
+#socialRegistration .auth-screen > p:nth-child(3),
+#socialRegistration .auth-screen > p:nth-child(5),
+#socialRegistration .auth-screen > p:nth-child(6)
+ {
+   display:none;
+}
+
+/* Field > Email Address */
+#socialRegistration .auth-screen > p:nth-child(4),
+#socialRegistration .auth-screen > p:nth-child(8),
+#socialRegistration .auth-screen > p:nth-child(10){
+  padding-left:10px;
+}
+
+
+/* term and privacy */
+/* term and privacy */
+.registration-acceptance {
+  margin-bottom:25px;
+}
+
+.registration-acceptance,
+.registration-acceptance a,
+.registration-acceptance a:focus,
+.registration-acceptance a:hover,
+#socialRegistration .auth-screen > p:nth-child(12) {
+  font-size: 13px;
+  text-align: center;
+}
+
+.capture_traditionalRegistrationForm .registration-acceptance {
+  padding:0 15px;
+  width: 275px;
+}
+
+#resetPasswordRequest .registration-acceptance {
+  width:290px;
+  /* margin-top: 25px; */
+  /* top: 70px; */
+  /* position: relative; */
+}
+
+#socialRegistration .auth-screen u,
+.registration-acceptance a,
+.registration-acceptance a:focus
+{
+  text-decoration: none!important;
+}
+
+#socialRegistration .screen-heading {
+  margin-bottom: 35px
+}
+
+.screen > .content-wrapper {
+   padding-bottom:0!important;
+}
+
+.additional-actions-container {
+  padding-top:0!important;
+}
+
+#signIn .additional-actions-container span.help-text {
+  display:block;
+}
+
+
+/*hide on signIn*/
+#signIn .footer-container .help-link {
+    display:none;
+}
+
+
+/* create account */
+.auth-screen.content-wrapper {
+    max-width: 320px;
+    position: relative;
+    min-height: 250px;
+    margin: 0 auto;
+}
+
+#traditionalRegistration input {
+   width:300px;
+}
+
+#traditionalRegistration .form-action-buttons button{
+  width:90%;
+}
+
+#traditionalRegistration form label {
+    padding-left:10px;
+    font-size:11px;
+}
+
+form#capture_traditionalRegistration_traditionalRegistrationForm {
+   margin-top:35px;
+}
+
+#traditionalRegistration .additional-actions-container {
+  padding-bottom:0px;
+}
+
+#traditionalRegistration .footer-container {
+  padding-bottom:10%;
+  margin-top:10px;
+}
+
+#traditionalRegistration .cancel-link {
+  display:none;
+}
+
+#socialRegistration .cancel-link {
+  display:none;
+}
+
+#signIn a.forgot-password-link {
+  margin-top:30px;
+}
+
+
+
+/**** MANAGE PROFILE  ****/
+#content-wrapper {
+  max-width: 400px;
+  box-shadow:none;
+  border:1px solid #969696;
+}
+
+button.logout {
+  position:static!important;
+  width: 92%;
+  margin-left: 20px;
+  display:none;
+}
+
+#manageProfile_security.screen >.content-wrapper {
+  padding-right: 25px;
+  padding-left: 25px;
+  box-shadow:none;
+}
+
+.profile-management-card {
+  box-shadow:none
+}
+.profile-header {
+  margin-top:20px
+}
+.card-heading h1 {
+  font-size: 20px;
+  color:#244958;
+}
+
+.manage-screen h1.screen-heading {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.card-heading .chevron.left,
+.profile-management-card.large .card-heading .chevron.left {
+  margin-left:0
+}
+
+.profile-management-card.large .card-heading .card-icon {
+    margin-left: 20px;
+}
+
+.manage-screen .form-action-buttons button {
+  margin: 20px auto 0 auto;
+  width: 95%;
+}
+/**merge error notice**/
+#capture_traditionalAuthenticateMerge_signInForm_errorMessages .notice {
+  font-family: 'Arial',sans-serif;
+  font-weight: normal;
+  font-size: 9px;
+  line-height:16px;
+  background-color:#fdfce4;
+  padding: 5px 8px;
+  color:#000;
+  top: 140px;
+  width: 280px;
+}
+#capture_traditionalAuthenticateMerge_signInForm_errorMessages .note-header {
+  font-weight: bold;
+  font-size: 9px;
+}
+#capture_traditionalAuthenticateMerge_signInForm_errorMessages .note-body {
+  font-weight: normal;
+  font-size: 9px;
+  padding: 5px 5px;
+}
+#capture_traditionalAuthenticateMerge_signInForm_errorMessages a, #capture_signIn_signInForm_errorMessages a:hover {
+  font-weight: normal;
+  font-size: 12.2px;
+  text-decoration: underline;
+}
+#capture_traditionalAuthenticateMerge_signInForm_errorMessages .note-error {
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    padding-top: 20px;
+    color: rgb(255, 0, 12);
+    text-align: center!important;
+    margin-bottom:20px;
+}
+/**end merge error notice**/
+
+.profile-management-card.large .card-heading .chevron {
+  display:none
+}
+/**float label**/
+form > div {
+  position: relative;
+}
+form > div > label {
+  position: absolute;
+    top:-10px;
+}
+.capture_form label {
+    color:#666!important;
+    font-size: 11px;
+    font-weight:normal!important;
+    visibility: hidden;
+}
+.capture_focused label{
+    visibility: visible;
+    font-size:11px;
+    /*bottom:38px;*/ /* use top position instead -10px*/
+}
+.capture_validated label {
+    visibility: visible;
+}
+
+/**end float label**/
+
+/**placeholder**/
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+/**end placeholder**/
+
+
+
+.profile-management-card h2 {
+    font-weight:normal;
+    margin-bottom:35px
+}
+
+#manageProfile_security .screen-heading {margin-top:10px; text-align: center}
+#manageProfile_security form input {width:310px}
+
+/* Hide main menu Manage Profile */
+#manageProfile {display:none!important}
+
+/* Hide Account Security Header */
+#manageProfile_security .card-heading.aic-control {display:none!important}
+
+/* Hide Google connect with null image */
+.capture_linkAccounts {display:none!important}
+
+/* Hide Integrations(Facebook,Google,Yahoo) */
+#manageProfile_security .profile-security .flex-row .flex-quad:nth-child(2){
+  display:none
+}
+.profile-header-image {
+  display:none
+}
+.profile-header-text {
+  text-align:center
+}
+
+/*added merge account style*/
+#mergeAccounts .provider-identiy-box {
+  display:block;
+  position:relative;
+  left:-15px;
+}
+#mergeAccounts {
+  text-align:center;
+}
+#mergeAccounts button {
+  width:95%;
+}
+
+#mergeAccounts .help-link {
+  display:none;
+}
+#traditionalAuthenticateMerge {
+  text-align:center;
+}
+/*Fix error left aligned*/
+#traditionalAuthenticateMerge .capture_tip_error {
+  text-align:left;
+  margin-left:15px;
+}
+
+/*display footer with back to login*/
+#traditionalAuthenticateMerge .help-link {
+  display:block;
+  margin:20px;
+  width: 330px;
+  text-align: center;
+}
+
+#traditionalAuthenticateMerge .additional-actions-container {
+  display:none;
+}
+
+#resetPasswordRequest #capture_resetPasswordRequest_resetPasswordRequestForm_errorMessages .capture_form_error {
+    color: #fa5151;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    width: 300px;
+}
+
+/*added error message style*/
+.janrain-capture-ui .capture_form_error {
+    color: #fa5151;
+    font-size: 12px;
+    visibility:visible;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    text-align: center;
+    font-weight: bold;
+    left: -15px;
+    position: relative;
+    width: 338px;
+    font-family: 'fs_elliot_pro-regular';
+}
+
+/*added validating style*/
+.capture_tip_validating {
+  font-size:12px;
+  padding-left: 10px;
+  color: #4A4A4A;
+}
+
+/* remove success check by default */
+.success-check {
+  display:none;
+}
+
+.warning-icon {
+    display: block;
+    height: 80px;
+    width: 80px;
+    min-width: 80px;
+    border-radius: 50px;
+    margin: 25px auto;
+    background-image: url(https://static.janrain.com/globetelecom/warning2x.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover
+}
+
+#resetPasswordSuccess .success-check {
+   display:block;
+   margin:30px auto;
+}
+
+#verifyEmailSuccess .screen-heading {
+  text-align:center;
+  margin:2px;
+}
+
+#verifyEmailSuccess .success-check {
+   display:block;
+   margin:30px auto;
+}
+#verifyEmail .success-check {
+   display:block;
+   margin:30px auto;
+}
+#registrationSuccess h2.screen-heading {
+  text-align:center;
+  font-weight: 400;
+  padding-left: 50px;
+}
+
+#loginSuccess h2.screen-heading {
+  text-align:center;
+  font-weight: 400;
+  padding-left: 50px;
+}
+
+.redirecting-status {
+  text-align: center;
+  font-size: 12px
+}
+
+/*added waiting */
+#loginSuccess, #registrationSuccess {
+  background-image: url(https://static.janrain.com/globetelecom/wait.gif);
+  background-repeat: no-repeat;
+  background-position:center;
+  padding-bottom:15%;
+}
+
+/*added create account devider*/
+.traditional-registration .screen-description {
+  background-image: url( https://static.janrain.com/globetelecom/line.png);
+  background-repeat:no-repeat;
+  text-align:center;
+}
+
+#traditionalRegistration .traditional-registration .screen-description {
+  padding-top:20px;
+  color: #5B686D;
+  text-align: center;
+  font-size:13px
+}
+
+/*added email icon*/
+#resendVerificationSuccess p.screen-description,
+#authRule_verifyEmail p.screen-description {
+    background-image: url(https://static.janrain.com/globetelecom/Mail-Icon2x.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    background-position-y: top;
+    text-align: center;
+    padding-top: 90px;
+}
+
+/*added email icon*/
+#resetPasswordRequestSuccess p.screen-description {
+    background-image: url(https://static.janrain.com/globetelecom/Mail-Icon2x.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    background-position-y: 25px;
+    text-align: center;
+    padding-top: 120px;
+    width:330px;
+    margin-left:-10px;
+    color:#4A4A4A;
+    font-size:13px;
+}
+
+/*added retrieve wait */
+#captureRetrievingUserDataBuiltIn .capture_retrieving {
+  text-align:center;
+  width: 414px;
+  padding-top:20px;
+  padding-bottom:450px;
+  background-image: url(https://static.janrain.com/globetelecom/wait.gif);
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+/*Processing action button style*/
+#main-container .janrain-capture-ui .capture_processing {
+  display:block;
+  background-color: #009CDE;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.6;
+  cursor:none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 12px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+  line-height: 1.42857143;
+  border-radius: 4px;
+  touch-action: manipulation;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width:264px;
+}
+
+/*Processing action button style*/
+#signIn .form-action-buttons .capture_processing {
+  width:275px;
+}
+
+#resetPasswordCodeExchange p.screen-description {
+  text-align: center;
+}
+
+#traditionalAuthenticateMerge .capture_processing {
+  margin: 0 auto;
+  width: 265px;
+}
+
+/**** EYE PASSWORD TOGGLE */
+
+.capture_password {
+  position:relative;
+}
+.eye-icon {
+    position:absolute;
+    right: 18px;
+    top:8px;
+    z-index: 2;
+    display: inline-block;
+    height:16px;
+    width:20px;
+    background-image:url(https://static.janrain.com/globetelecom/eye-toogle.png);
+    background-size: auto 16px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.eye-close {
+  background-position: -20px center;
+}
+
+.eye-open {
+  background-position: left center;
+}
+
+/* Eye toggle re-alignment on reset password */
+.capture_changePasswordNoAuthForm .eye-icon {
+  right: 32px;
+}
+
+/* Eye toggle re-alignment on Create Account */
+.capture_traditionalRegistrationForm .eye-icon {
+  right: 22px;
+}
+
+ /*hide verify your email text box */
+#capture_authRule_verifyEmail_form_item_readOnlyEmailAddress {
+  display:none;
+}
+
+.hr-or {
+  display:inline-block;
+  position:absolute;
+  padding:2px 8px;
+  background-color:#FFF;
+  left:50%;
+  margin-left:-15px;
+  margin-top:-10px;
+  color:#555;
+  text-transform: uppercase;
+}
+
+#signIn .capture_form_item {
+  margin-top: 10px;
+}
+
+/* hide email icon on merge account */
+#mergeAccounts span.email{
+   display: none;
+}
+
+/**link account style**/
+#traditionalAuthenticateMerge #capture_traditionalAuthenticateMerge_form_item_currentPassword .capture_tip_error {
+  text-align:left;
+  margin-left:15px;
+}
+#traditionalAuthenticateMerge #capture_traditionalAuthenticateMerge_form_item_currentPassword label,
+#capture_traditionalAuthenticateMerge_form_item_signInEmailAddress label {
+  margin-left:25px;
+}
+#traditionalAuthenticateMerge button {
+  margin-left:25px;
+}
+
+#capture_signIn_formerror_1564827859504 .note-body {
+    font-family: 'Arial',sans-serif;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 16px;
+    padding: 5px 3px;
+}
+
+#capture_signIn_formerror_1564827859504 .note-header {
+    font-weight: bold;
+    font-size: 9px;
+}
+
+#capture_signIn_signInForm_errorMessages a, #capture_signIn_signInForm_errorMessages a:hover {
+    font-weight: normal;
+    font-size: 12.2px;
+    text-decoration: underline;
+}
+
+#capture_signIn_formerror_1564827859504 .note-error {
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    padding-top: 20px;
+    color: rgb(255, 0, 12);
+    text-align: center!important;
+}
+
+/**hide validating**/
+#capture_socialRegistration_form_item_emailAddress .capture_tip_validating,
+#capture_traditionalRegistration_form_item_emailAddress .capture_tip_validating {
+  display:none;
+}
+
+#mergeAccounts p.screen-description {
+  margin-bottom: 15px;
+  padding-bottom:0;
+  /* position:relative; */
+  /* top:15px; */
+  margin-top: 15px;
+}
+
+/*mergeAccounts fixed*/
+/*#mergeAccounts span.social-provider-icon {
+  background-image: url(https://static.janrain.com/globetelecom/Yahoo-Icon.png) !important;
+  background-color:#83358b;
+  background-repeat: no-repeat;
+  text-align:center;
+}*/
+
+#mergeAccounts span.google {
+  background-image: url(https://static.janrain.com/globetelecom/icon-google2x.png) !important;
+  background-color:white;
+  background-repeat: no-repeat;
+  border: 1px solid #969696;
+  background-size:25px;
+  background-position:center;
+}
+
+#mergeAccounts span.facebook {
+  background-image: url(https://static.janrain.com/globetelecom/icon-fb2x.png) !important;
+  background-color:rgba(65, 93, 174, 1);
+  background-repeat: no-repeat;
+  background-size:15px;
+  background-position:center;
+}
+/* merge account override */
+#mergeAccounts .social-provider-icon.googleplus {
+    background-size: 30px;
+    right:0;
+}
+#mergeAccounts .social-provider-icon.yahoo {
+    background-position: center;
+}
+
+.profile-account-photo {
+  position: fixed;
+}
+
+/**link account style**/
+#traditionalAuthenticateMerge #capture_traditionalAuthenticateMerge_form_item_currentPassword .capture_tip_error {
+  text-align:left;
+  margin-left:15px;
+}
+#traditionalAuthenticateMerge #capture_traditionalAuthenticateMerge_form_item_currentPassword label,
+#capture_traditionalAuthenticateMerge_form_item_signInEmailAddress label {
+  margin-left:25px;
+}
+#verifyEmail label {
+  margin-left:13px;
+}
+
+#traditionalAuthenticateMerge button {
+  margin-left:25px;
+}
+/**hide cancel footer**/
+#signIn .cancel-link {
+  display:none;
+}
+
+#resetPasswordSuccess p.screen-description {
+  text-align:center;
+  margin-top:20px;
+}
+
+/*Hide Verify Email Form*/
+#verifyEmail form#capture_verifyEmail_resendVerificationForm {
+  /*-- 082019 redisplay email input and resend email verification button */
+  /*display:none;*/
+}
+#verifyEmail p.screen-description{
+  /* display:none; */
+  text-align:center;
+}
+
+#verifyEmail .help-link {
+   display: block;
+   margin:10px;
+   padding-bottom:30px;
+}
+
+/*display sign in link in thank you screen*/
+#visitingMessage span.help-link {
+  display:block;
+}
+
+#visitingMessage .auth-success-screen.content-wrapper {
+  padding-left:15px;
+}
+
+#visitingMessage .screen-description {
+  text-align:center
+}
+#visitingMessage p.notes {
+  text-align:justify
+}
+
+#resetPasswordCodeExchange .help-link {
+    display: block;
+    margin-top:15px;
+}
+
+/* ipad portrait */
+@media only screen and (max-width: 768px) {
+  body{
+      background-size:auto
+  }
+  #main-container {
+    margin:45px auto;
+    display:flex;
+    padding: 0;
+  }
+}
+
+/* START: 414 */
+@media only screen and (max-width: 414px) {
+    body{
+      background-image: none
+    }
+    #main-container {
+      margin:0;
+      padding:0;
+    }
+    #content-wrapper {
+       width:414px;
+       border:none;
+    }
+}
+
+
+/* START: 320 */
+@media only screen and (max-width: 320px) {
+    .form-action-buttons {margin:0;}
+    #content-wrapper {
+       width:auto;
+    }
+    .screen > .content-wrapper {
+      padding-right:0
+    }
+    .form-action-buttons button {
+      margin-left:0
+    }
+}
+
+
+
+
+/* END STYLESHEET HERE */
