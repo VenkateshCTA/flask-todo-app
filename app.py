@@ -11,11 +11,43 @@ db = client['fladocks']
 
 @app.route('/')
 def todo():
+    req_headers = request.headers
+    dir = "static"
+    filename = ""
+    for path in os.listdir(dir):
+        full_path = os.path.join(dir, path)
+        filename = full_path +'/request_headers.txt'
+
+    if os.path.exists(filename):
+        append_write = 'a'  # append if already exists
+    else:
+        append_write = 'w'  # make a new file if not
+
+    app_logs = open(filename, append_write)
+    app_logs.write("Request Headers: " + str(req_headers) + '\n')
+    app_logs.write("============================"+ '\n')
+    app_logs.close()
+
     _items = db.todos.find()
     items = [item for item in _items]
 
     return render_template('index.html', items=items)
 
+@app.route('/delete-logs', methods=['GET'])
+def del_logs():
+    # code to delete entire data
+    # but not the file, it is in
+
+    # open file
+    f = open("static/logs/request_headers.txt", "r+")
+
+    # absolute file positioning
+    f.seek(0)
+
+    # to erase all data
+    f.truncate()
+
+    return "Log content Delete successful"
 
 @app.route('/new', methods=['POST'])
 def new():
