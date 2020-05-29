@@ -16,7 +16,7 @@ def getStaticFile(path):
 
     dir = "static"
     full_path = os.path.join(dir, "logs")
-    if file_type == 'png':
+    if file_type in ['png','jpg','jpeg']:
         req_headers = request.headers
         filename = full_path + '/request_headers_img.txt'
 
