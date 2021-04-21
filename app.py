@@ -5,9 +5,9 @@ import datetime
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb://sampleuser:pass123@ds119020.mlab.com:19020/fladocks")
+# client = MongoClient("mongodb://sampleuser:pass123@ds119020.mlab.com:19020/fladocks")
 # client = MongoClient("mongodb://127.0.0.1:27017/todoapp")
-db = client['fladocks']
+# db = client['fladocks']
 
 @app.route('/sta/<path:path>')
 def getStaticFile(path):
@@ -113,10 +113,10 @@ def todo():
     app_logs.write("============================"+ '\n')
     app_logs.close()
 
-    _items = db.todos.find()
-    items = [item for item in _items]
+#     _items = db.todos.find()
+#     items = [item for item in _items]
 
-    return render_template('index.html', items=items)
+    return render_template('index.html')
 
 @app.route('/delete-logs/<headers_file>', methods=['GET'])
 def del_logs(headers_file):
@@ -140,7 +140,7 @@ def del_logs(headers_file):
 
     else:
         return "Log file doesn't exist"
-
+'''
 @app.route('/new', methods=['POST'])
 def new():
 
@@ -151,7 +151,7 @@ def new():
     db.todos.insert_one(item_doc)
 
     return redirect(url_for('todo'))
-
+'''
 # Upgrading to heroku-20
 
 if __name__ == "__main__":
