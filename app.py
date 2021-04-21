@@ -115,8 +115,8 @@ def todo():
 
 #     _items = db.todos.find()
 #     items = [item for item in _items]
-
-    return render_template('index.html')
+    items = {"abc":123, "bcd": 234, "efg": 456}
+    return render_template('index.html', items=items)
 
 @app.route('/delete-logs/<headers_file>', methods=['GET'])
 def del_logs(headers_file):
