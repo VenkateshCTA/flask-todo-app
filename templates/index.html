@@ -32,25 +32,156 @@
         </div>
       </div>
     </div>
+
+<h1>venkatesh-sandbox</h1>
+    <button onclick="test()">Event</button>
+    <button onclick="signup()">Signup</button>
+    <button onclick="purchased()">Purchased</button>
+    <button onclick="searched()">Searched</button>
+    <button onclick="updatedPurchased()">Update Shopping Cart</button>
+    <button onclick="Signup()">Signup</button>
+    <button onclick="SignupAdditional()">Signup with Additional Attributes</button>
+    <button onclick="LinkingSpecificResource()">Linking Specific Resource</button>
+    <button onclick="LikedFacebook()">Liked Facebook</button>
+    <button onclick="ShareSpecificPageToSpecificUsers()">Share Specific Page To Specific Users</button>
+    <button onclick="ShareSpecificResourceToSpecificUsers()">Share Specific Resource To Specific Users</button>
+    <button onclick="CommentingAPage()">Commenting a page or a resource</button>
+
   </div>
 
 <script async type="text/javascript">
     function zync_call() {
-        var z = document.createElement("script");
-        var zmpID="venkatesh-sandbox";
+      var z = document.createElement("script");
+      var zmpID = "venkatesh-sandbox";
 
-        var z_src = "https://live.rezync.com/sync?c=16b6410431b6374e780104abb0443ca8&p=32c312bc3b930757ce7191776dbef412&k=venkatesh-sandbox-pixel-4680&zmpID="+zmpID;
-        z.setAttribute("src", z_src);
-        document.body.appendChild(z);
+      var z_src =
+        "https://live.rezync.com/sync?c=16b6410431b6374e780104abb0443ca8&p=32c312bc3b930757ce7191776dbef412&k=venkatesh-sandbox-pixel-4680&zmpID=" +
+        zmpID;
+      z.setAttribute("src", z_src);
+      document.body.appendChild(z);
     }
 
-    if (['complete', 'interactive'].indexOf(document.readyState) >= 0) {
-        zync_call();
+    if (["complete", "interactive"].indexOf(document.readyState) >= 0) {
+      zync_call();
     } else {
-        window.addEventListener("DOMContentLoaded", function(){
-            zync_call();
-        });
+      window.addEventListener("DOMContentLoaded", function () {
+        zync_call();
+      });
     }
+
+    const searched = () => {
+      bt('track', 
+   'searched', 
+   {'query': 'iPhone X'}
+  );
+    }
+
+    const signup = () => {
+      bt('track', 
+   'signed_up', 
+   {'user_id': 'sample-user-2'}
+  );
+    }
+
+      const test = () => {
+      bt(
+        'track',
+        'liked',
+   {'score': -1}
+      );
+    }
+
+    const purchased = () => {
+      bt('track', 
+   'purchased', 
+   {
+    'shoppingCartItems': [ 
+     {'id': 1234, 'resourceType': 'myProduct', 'price': 1.25, 'quantity': 2}, 
+     {'id': 2345, 'resourceType': 'myProduct', 'price': 2.8, 'quantity': 1, 'sale_discount': 0.90}
+    ], 
+    'promoCode': 'StRSiTb'
+   }
+  );
+    }
+
+    const updatedPurchased = () => {
+      bt('track', 
+   'purchased', 
+   {
+    'shoppingCartItems': [ 
+     {'id': 1234, 'resourceType': 'myProduct', 'price': 1.25, 'quantity': 2}, 
+     {'id': 2345, 'resourceType': 'myProduct', 'price': 2.8, 'quantity': 1, 'sale_discount': 0.90}
+    ], 
+    'promoCode': 'StRSiTb'
+   }
+  );
+    }
+
+  const Signup = () => {
+    bt('track', 
+   'signed_up', 
+   {'user_id': 'check-user-Jul-22'}
+  );
+}
+
+const SignupAdditional = () => {
+bt('track', 
+   'signed_up', 
+   {
+    "email": 'vpcta@example.com',
+    "newsletter": 'Its My Newsletter',
+    "frequency": 'Weekly',
+    "first_name": 'Venkatesh',
+    "last_name": 'Prasad'
+   },
+  );
+}
+
+const LinkingSpecificResource = () => {
+bt('track', 
+   'liked', 
+   {'id': 'test_venk_123', 'resourceType': 'article', 'url': 'https://flask-heorku.com'}
+  );
+  }
+
+const LikedFacebook = () => {
+  bt('track',
+   'liked',
+   {to: 'facebook'}
+);
+}
+
+const ShareSpecificPageToSpecificUsers = () => {
+bt('track',
+   'shared',
+   {'target_user_ids': ['sample-target-user-1', 'sample-target-user-2']}
+  );
+}
+
+const ShareSpecificResourceToSpecificUsers = () => {
+bt('track',
+   'shared',
+   {'target_user_ids': ['sample-target-user-123', 'sample-target-user-456']},
+   {'id': 'itsTestID123', 'resourceType': 'yourResourceType', 'url': 'https://example.com'}
+  );
+}
+
+const CommentingAPage = () => {
+bt('track',
+   'commented',
+   {'commentText': 'This is my comment, Venkatesh' }
+  );
+}
+
+// const onCompleted = () => {
+// bt('track', 
+//    'viewed', 
+//    {'id': 'abcde123', 'resourceType': 'article'}, 
+//    {onComplete: function() 
+//    { console.log('Track Call Completed!'); }
+//    }
+//   );
+
 </script>
 
 </body>
